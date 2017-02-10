@@ -475,8 +475,8 @@
 			this.paddleHeight = 56;
 
 			this.board = new _Board2.default(this.width, this.height);
-			this.paddle1 = new _Paddle2.default(this.height, this.paddlewidth, this.paddleHeight, this.boardGap, (this.height - this.paddleHeight) / 2);
-			this.paddle2 = new _Paddle2.default(this.height, this.paddlewidth, this.paddleHeight, this.boardGap, this.width - this.boardGap - this.paddleWidth, (this.height - this.paddleHeight) / 2);
+			this.paddle1 = new _Paddle2.default(this.height, this.paddleWidth, this.paddleHeight, this.boardGap, (this.height - this.paddleHeight) / 2, _settings.KEYS.a, _settings.KEYS.z);
+			this.paddle2 = new _Paddle2.default(this.height, this.paddleWidth, this.paddleHeight, this.width - this.boardGap - this.paddleWidth, (this.height - this.paddleHeight) / 2, _settings.KEYS.up, _settings.KEYS.down);
 		}
 
 		_createClass(Game, [{
@@ -512,6 +512,14 @@
 	  value: true
 	});
 	var SVG_NS = exports.SVG_NS = 'http://www.w3.org/2000/svg';
+
+	var KEYS = exports.KEYS = {
+	  a: 65, // player 1 up key
+	  z: 90, // player 1 down key
+	  up: 38, // player 2 up key
+	  down: 40, // player 2 down key
+	  spaceBar: 32 // we'll use this later...
+	};
 
 /***/ },
 /* 11 */
@@ -586,7 +594,7 @@
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 	var Paddle = function () {
-	  function Paddle(boardHeight, width, height, x, y) {
+	  function Paddle(boardHeight, width, height, x, y, up, down) {
 	    _classCallCheck(this, Paddle);
 
 	    this.boardHeight = boardHeight;
@@ -596,6 +604,19 @@
 	    this.y = y;
 	    this.speed = 10;
 	    this.score = 0;
+	    this.up = up;
+	    this.down = down;
+
+	    document.addEventListener('keydown', function (event) {
+	      switch (event.keyCode) {
+	        case up:
+	          console.log('up');
+	          break;
+	        case down:
+	          console.log('down');
+	          break;
+	      }
+	    });
 	  }
 
 	  _createClass(Paddle, [{
