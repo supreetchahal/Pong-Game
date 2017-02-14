@@ -4,6 +4,8 @@ A basic pong game using SVGs.
 
 The pong game is made using SVGs (Scalable Vector Graphics) and Javascript along with basic HTML and CSS. The game is played with 2 players, each controlling the movement of the paddles using keys. A score counter keeps track of the score to determine the winner.
 
+![pong](https://cloud.githubusercontent.com/assets/24979374/22915743/435aacc0-f22e-11e6-975f-fec399ece951.png)
+
 ## Project source can be downloaded from:
 https://github.com/supreetchahal/Pong-Game.git
 
