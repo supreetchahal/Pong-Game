@@ -71,6 +71,24 @@ export default class Game {
         this.gameElement.appendChild(svg);
 
         this.board.render(svg);
+
+
+		if (this.paddle1.score === 5 || this.paddle2.score === 5) {
+			let gameover = document.createElementNS(SVG_NS, 'text')
+			gameover.setAttributeNS(null, 'fill', 'blue');
+			gameover.setAttributeNS(null, 'stroke', 'yellow')
+      gameover.setAttributeNS(null, 'stroke-width', '6px')
+      gameover.setAttributeNS(null, 'stroke-opacity', .50)
+			gameover.setAttributeNS(null, 'x', 10);
+			gameover.setAttributeNS(null, 'y', 150);
+			gameover.setAttributeNS(null, 'font-size', '75px');
+			gameover.setAttributeNS(null, 'kerning', '10');
+
+			gameover.innerHTML = 'GAME OVER!';
+			svg.appendChild(gameover);
+}
+
+
         this.paddle1.render(svg);
         this.paddle2.render(svg);
         this.ball.render(svg, this.paddle1, this.paddle2);

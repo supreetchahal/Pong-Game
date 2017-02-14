@@ -57,6 +57,10 @@ src/styles/game.css
 webpack.config.js
 yarn.lock
 ```
+## Stretch Goal Achieved
+
+When either player 1 or player 2 reaches 5 points, the game is over and the "GAME OVER" text appears on the board. 
+
 ## Learning Objectives Achieved:
 
 1. The most interesting tool I learned during this project were SVGs. I enjoyed creating designs using HTML. It challenged me to incorporate CSS transformations into SVGs to provide interactivity.
@@ -65,4 +69,4 @@ yarn.lock
 
 3. The project also provided an opportunity to learn, practice and implement tools like Babel and Webpack.
 
-4. Finally, I learned how to incorporate screenshots of my work into README.md. 
+4. Finally, I learned how to incorporate screenshots of my work into README.md.
