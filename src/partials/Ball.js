@@ -90,7 +90,7 @@ export default class Ball {
         ball.setAttributeNS(null, 'cy', this.y);
         ball.setAttributeNS(null, 'r', this.radius);
         ball.setAttributeNS(null, 'stroke-width', '8');
-        ball.setAttributeNS(null, 'fill', 'cyan');
+        ball.setAttributeNS(null, 'fill', 'black');
 
         svg.appendChild(ball);
 
