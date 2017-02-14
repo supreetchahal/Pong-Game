@@ -57,3 +57,12 @@ src/styles/game.css
 webpack.config.js
 yarn.lock
 ```
+## Learning Objectives Achieved:
+
+1. The most interesting tool I learned during this project were SVGs. I enjoyed creating designs using HTML. It challenged me to incorporate CSS transformations into SVGs to provide interactivity.
+
+2. The pong game project also gave me an opportunity to familiarize myself with EcmaScript 2015. Although it would require more knowledge and practice, however, this project was a helpful introduction.
+
+3. The project also provided an opportunity to learn, practice and implement tools like Babel and Webpack.
+
+4. Finally, I learned how to incorporate screenshots of my work into README.md. 
